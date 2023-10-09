@@ -3,9 +3,12 @@ import sys
 import types
 import typing
 from pathlib import Path
+from warnings import warn
 
 from click.core import Command, Parameter
 
+
+warn("We have moved from M$ GitHub to https://codeberg.org/KOLANICH-tools/antiflash.py, read why on https://codeberg.org/KOLANICH/Fuck-GuanTEEnomo .")
 
 def patchSpacesBinOpAST(binOp: ast.BinOp) -> bool:
 	for sideName in ("left", "right"):
